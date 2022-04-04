@@ -31,7 +31,6 @@ export class RemoteEmailSignIn implements EmailSignIn {
       url: this.url,
       body: params
     })
-
     const tokenOrError = RequestResponse.handle<TokenModel>(httpResponse)
 
     if (tokenOrError.isError()) {

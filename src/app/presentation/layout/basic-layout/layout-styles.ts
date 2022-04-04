@@ -32,7 +32,10 @@ export const RootLayoutContainer = styled('div')(() => ({
     fontWeight: 700,
     opacity: 0.7
   },
-  '& p, & span, & button': {
+  '& p, & span, & button, & label': {
     fontFamily: "'Open Sans', sans-serif"
+  },
+  '& label': {
+    fontWeight: 600
   }
 }))

@@ -5,8 +5,7 @@ import {
   authSliceName,
   AuthSliceState,
   AUTH_SLICE_INITIAL_STATE,
-  LOGOUT,
-  SET_TOKEN
+  AUTH_SLICE_ACTIONS
 } from '~/store/features/auth/types'
 import { createHydratedSlice } from '~/store/helpers'
 
@@ -18,7 +17,7 @@ export const authSlice = createHydratedSlice<
   name: authSliceName,
   initialState: { ...AUTH_SLICE_INITIAL_STATE },
   reducers: {
-    [SET_TOKEN]: setTokenReducer,
-    [LOGOUT]: logoutReducer
+    [AUTH_SLICE_ACTIONS.SET_TOKEN]: setTokenReducer,
+    [AUTH_SLICE_ACTIONS.LOGOUT]: logoutReducer
   }
 })

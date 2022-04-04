@@ -16,4 +16,5 @@ export type ValidationErrorType = {
   option?: {
     [key: string]: string | number
   }
+  message?: string
 }

@@ -1,6 +1,5 @@
 export type UserModel = {
-  googleId: string
-  displayName: string
+  id: string
   firstName: string
   lastName: string
   image: string

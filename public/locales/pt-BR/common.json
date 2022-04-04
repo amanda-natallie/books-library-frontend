@@ -3,7 +3,8 @@
   "EMAIL": "E-mail",
   "PASSWORD": "Senha",
   "actions": {
-    "enter": "Entrar com Google",
+    "enter": "Entrar",
+    "signup": "Não tem uma conta? Cadastre-se",
     "add": "Adicionar",
     "update": "Atualizar"
   },

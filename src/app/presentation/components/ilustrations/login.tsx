@@ -12,7 +12,6 @@ const LoginIllustration = () => {
       x='0px'
       y='0px'
       width='100%'
-      height='auto'
       viewBox='0 0 2760 1840'
       xmlSpace='preserve'
     >

@@ -28,7 +28,7 @@ const HomePage = () => {
         size='large'
         variant='contained'
         color='primary'
-        onClick={handleLogout}
+        onClick={() => handleLogout()}
       >
         Sair
       </Button>

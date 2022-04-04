@@ -34,11 +34,15 @@ const AddBookForm = () => {
                 pb: 2
               }}
               name='name'
-              label={'common:book.form.title'}
+              label={{
+                text: 'common:book.form.title'
+              }}
             />
             <TextInput
               name='description'
-              label={'common:book.form.description'}
+              label={{
+                text: 'common:book.form.description'
+              }}
               rows={5}
             />
           </div>

@@ -4,14 +4,6 @@ import { IRoute } from '~/app/main/types'
 
 export const RoutesConfig: IRoute[] = [
   {
-    name: 'dashboard',
-    path: '/',
-    exact: true,
-    private: true,
-    component: lazy(async () => import('~/app/presentation/pages/home/home')),
-    layout: 'DefaultLayout'
-  },
-  {
     name: 'login',
     path: '/login',
     exact: true,

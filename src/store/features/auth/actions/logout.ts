@@ -1,5 +1,4 @@
 import { createAction } from '@reduxjs/toolkit'
-
 import { ActionMap, ReducerMap } from '~/store/types'
 
 import { AuthSliceState, AUTH_SLICE_ACTIONS } from '../types'

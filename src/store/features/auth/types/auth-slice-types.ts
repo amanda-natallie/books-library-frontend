@@ -2,16 +2,10 @@ import { TokenModel } from '~/app/domain/models'
 
 export const authSliceName = 'auth' as const
 
-export const SET_TOKEN = 'setToken'
-export const EMAIL_SIGN_IN = 'emailSignIn'
-export const GOOGLE_SIGN_IN = 'googleSignIn'
-export const LOGOUT = 'logout'
-
 export const AUTH_SLICE_ACTIONS = {
-  SET_TOKEN: `${authSliceName}/${SET_TOKEN}`,
-  EMAIL_SIGN_IN: `${authSliceName}/${EMAIL_SIGN_IN}`,
-  GOOGLE_SIGN_IN: `${authSliceName}/${GOOGLE_SIGN_IN}`,
-  LOGOUT: `${authSliceName}/${LOGOUT}`
+  SET_TOKEN: '@auth/setToken',
+  LOGOUT: '@auth/logout',
+  SET_USER_INFO: '@auth/setUserInfo'
 } as const
 
 export const AUTH_SLICE_INITIAL_STATE: AuthSliceState = {
@@ -22,10 +16,12 @@ export const AUTH_SLICE_INITIAL_STATE: AuthSliceState = {
     refreshTokenExpiresIn: null,
     user: null
   },
-  logout: false
+  logout: false,
+  userInfo: null
 }
 
 export type AuthSliceState = {
   token: TokenModel
   logout: boolean
+  userInfo: TokenModel
 }

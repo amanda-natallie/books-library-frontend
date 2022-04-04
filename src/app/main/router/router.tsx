@@ -9,7 +9,11 @@ import { container } from '~/ioc/inversify.config'
 
 import { store } from '~/store/store'
 
-import { AuthGate, FullPageLoading } from '~/app/presentation/components'
+import {
+  AuthGate,
+  FullPageLoading,
+  ToastContainer
+} from '~/app/presentation/components'
 import { ContainerProvider, ThemeProvider } from '~/app/presentation/providers'
 
 import { RoutesConfig } from '../config/routes-config'
@@ -24,6 +28,7 @@ const Router: React.FC = () => {
         <Provider store={store}>
           <ThemeProvider>
             <BrowserRouter>
+              <ToastContainer />
               <AuthGate />
               <CssBaseline />
               {makeRoutes(RoutesConfig)}
