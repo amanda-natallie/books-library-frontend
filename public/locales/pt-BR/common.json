@@ -16,6 +16,10 @@
     "invalidCredentials": "As credenciais informadas são inválidas.",
     "unexpectedError": "Algum erro inesperado ocorreu, tente novamente em alguns instantes."
   },
+  "login": {
+    "title": "Bem vindo!",
+    "subtitle": "Para ter acesso a um enorme acervo de livros, você precisa fazer login."
+  },
   "book": {
     "title": "Lista de tarefas",
     "add": "Adicionar tarefa",

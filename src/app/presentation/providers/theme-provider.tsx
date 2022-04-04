@@ -7,14 +7,7 @@ import { ThemeContext } from '~/app/presentation/contexts'
 import { makeDarkTheme, makeLightTheme } from '~/app/presentation/styles'
 
 const ThemeProvider: React.FC = ({ children }) => {
-  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
   const [theme, setTheme] = useState(makeLightTheme())
-
-  useEffect(() => {
-    if (prefersDarkMode) {
-      setTheme(makeDarkTheme())
-    }
-  }, [prefersDarkMode])
 
   const toggleTheme = (): void => {
     const newTheme =

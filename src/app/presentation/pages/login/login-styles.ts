@@ -1,32 +1,32 @@
-import { Paper, styled } from '@mui/material'
+import { Grid, styled, Theme } from '@mui/material'
 
-export const RootContainer = styled('div')(() => ({
-  display: 'flex',
-  justifyContent: 'inherit',
-  alignItems: 'inherit',
+export const LoginContainer = styled('div')(() => ({
   width: '100%',
-  height: '100%'
+  display: 'flex',
+  alignItems: 'flex-start',
+  justifyContent: 'flex-start',
+  position: 'relative',
+  minHeight: '80vh',
+  overflow: 'hidden'
 }))
 
-export const ContentContainer = styled(Paper)(({ theme }) => ({
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  width: '70%',
-  height: '70%',
-  maxWidth: '50%',
-  [theme.breakpoints.down('sm')]: {
-    maxWidth: '80%'
-  },
-  [theme.breakpoints.down('xs')]: {
-    maxWidth: '90%'
+export const GridContainer = styled(Grid)(() => ({
+  marginBlock: 20,
+  marginInline: 40,
+  '& *:not(button, svg)': {
+    marginBottom: 10,
+    marginLeft: 10
   }
 }))
 
-export const FormContainer = styled('div')(() => ({
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  width: '80%',
-  height: '50%'
+export const IllustrationWrapper = styled('div')(() => ({
+  width: '100%',
+  position: 'absolute',
+  right: -210,
+  bottom: -150,
+  zIndex: 0,
+  '& > svg[data-test-id="login-illustration"]': {
+    width: '100%',
+    opacity: 0.7
+  }
 }))
