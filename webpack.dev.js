@@ -70,7 +70,7 @@ module.exports = merge(
         directory: path.join(__dirname, 'public')
       },
       historyApiFallback: true,
-      port: 3001
+      port: 3000
     },
     plugins: [
       new ForkTsCheckerWebpackPlugin({
