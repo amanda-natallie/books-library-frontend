@@ -20,7 +20,7 @@ const BookTable = ({ books }: Props) => {
   const [deleteBook] = useDeleteBookMutation()
 
   const handleDelete = async (book: number) => {
-    const res = await deleteBook({ toDoId: `${book}` })
+    const res = await deleteBook({ bookId: `${book}` })
     alert('deleted')
   }
 

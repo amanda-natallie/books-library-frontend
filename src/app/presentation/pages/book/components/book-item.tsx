@@ -13,9 +13,7 @@ const TodoItem = ({ book, onSelectRow }: Props) => {
     <TableRow key={book.id}>
       <TableCell align='left'>{book.name}</TableCell>
       <TableCell align='left'>{book.description}</TableCell>
-      <TableCell align='left'>
-        {book.completed ? 'Completed' : 'Not Completed'}
-      </TableCell>
+      <TableCell align='left'>{book.booked ? 'Booked' : 'Available'}</TableCell>
       <TableCell align='center'>
         <IconButton
           aria-label='edit'

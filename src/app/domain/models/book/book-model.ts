@@ -1,7 +1,8 @@
 export type BookModel = {
   id: number
   name: string
+  image: string
   description: string
-  completed: boolean
+  booked: boolean
   createdAt: string
 }

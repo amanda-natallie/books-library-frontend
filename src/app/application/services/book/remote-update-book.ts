@@ -16,12 +16,12 @@ export class RemoteUpdateBook implements UpdateBook {
   ) {}
 
   async update({
-    toDoId,
+    bookId,
     payload
   }: UpdateBook.Params): Promise<Response<UpdateBook.Model>> {
     const httpResponse = await this.httpClient.request({
       method: 'put',
-      url: `${this.url}/${toDoId}`,
+      url: `${this.url}/${bookId}`,
       body: payload
     })
 

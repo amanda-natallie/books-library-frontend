@@ -1,5 +1,6 @@
 export type AddBookModel = {
   name: string
+  image: string
   description: string
-  completed: boolean
+  booked: boolean
 }

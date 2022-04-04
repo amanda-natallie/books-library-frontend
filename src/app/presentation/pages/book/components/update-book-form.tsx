@@ -39,8 +39,8 @@ const UpdateBookForm = () => {
 
   const { translate } = useTranslation()
 
-  const onSubmit = async (values: AddBookModel) => {
-    const res = await updateBook({ toDoId: id, payload: values })
+  const onSubmit = async (values: UpdateBookModel) => {
+    const res = await updateBook({ bookId: id, payload: values })
     if (res) {
       alert('Todo updated successfully')
       history.push('/book-library')

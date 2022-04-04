@@ -6,7 +6,7 @@ export interface UpdateBook
 
 export namespace UpdateBook {
   export type Params = {
-    toDoId: string
+    bookId: string
     payload: UpdateBookModel
   }
   export type Model = {

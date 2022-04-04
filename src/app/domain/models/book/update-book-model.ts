@@ -1,5 +1,7 @@
 export type UpdateBookModel = {
+  id: number
   name: string
+  image: string
   description: string
-  completed: boolean
+  booked: boolean
 }

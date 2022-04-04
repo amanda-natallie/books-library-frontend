@@ -16,11 +16,11 @@ export class RemoteDeleteBook implements DeleteBook {
   ) {}
 
   async delete({
-    toDoId
+    bookId
   }: DeleteBook.Params): Promise<Response<DeleteBook.Model>> {
     const httpResponse = await this.httpClient.request({
       method: 'delete',
-      url: `${this.url}/${toDoId}`
+      url: `${this.url}/${bookId}`
     })
 
     const responseOrError = RequestResponse.handle(httpResponse)

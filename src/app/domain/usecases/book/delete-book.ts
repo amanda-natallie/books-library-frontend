@@ -6,7 +6,7 @@ export interface DeleteBook
 
 export namespace DeleteBook {
   export type Params = {
-    toDoId: string
+    bookId: string
   }
   export type Model = BookModel
 }
