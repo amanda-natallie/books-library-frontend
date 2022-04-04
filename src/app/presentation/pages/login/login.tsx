@@ -21,7 +21,7 @@ const LoginPage = () => {
       <CustomPaper customStyles={{ overflow: 'hidden' }}>
         <LoginContainer>
           <GridContainer container>
-            <Grid item xs={6}>
+            <Grid item xs={12} md={5}>
               <Illustrations.Logo />
               <Typography variant='h4'>{translate('login.title')}</Typography>
               <Typography variant='h6'>
@@ -29,7 +29,7 @@ const LoginPage = () => {
               </Typography>
             </Grid>
             <Grid item xs={12} />
-            <Grid item xs={4}>
+            <Grid item xs={12} md={4}>
               <Button
                 type='button'
                 fullWidth
