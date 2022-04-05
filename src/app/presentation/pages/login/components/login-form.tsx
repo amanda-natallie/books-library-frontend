@@ -56,12 +56,14 @@ const LoginForm = () => {
             name='email'
             label={{ text: 'common:EMAIL' }}
             autoComplete='email'
+            size='small'
           />
           <TextInput
             name='password'
             label={{ text: 'common:PASSWORD' }}
             type='password'
             autoComplete='current-password'
+            size='small'
           />
 
           <Grid

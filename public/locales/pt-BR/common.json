@@ -22,11 +22,12 @@
     "subtitle": "Para ter acesso a um enorme acervo de livros, você precisa fazer login."
   },
   "book": {
-    "title": "Lista de tarefas",
+    "title": "Lista de Livros",
     "add": "Adicionar tarefa",
     "edit": "Editar tarefa",
     "delete": "Excluir tarefa",
     "goBack": "Voltar para a lista",
+    "search": "Pesquisar",
     "form": {
       "title": "Título",
       "description": "Descrição",

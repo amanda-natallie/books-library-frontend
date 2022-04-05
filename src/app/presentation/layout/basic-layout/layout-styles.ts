@@ -10,7 +10,7 @@ export const RootLayoutContainer = styled('div')(() => ({
   overflowY: 'auto',
   overflowX: 'hidden',
   boxSizing: 'border-box',
-  background: 'linear-gradient(to bottom left, #94AEE7, #7F82D7)',
+  background: 'linear-gradient(to bottom left, #DADFF7, #DADFF7)',
   '& svg[data-test-id="logo-illustration"]': {
     alignSelf: 'baseline',
     maxWidth: '200px',
